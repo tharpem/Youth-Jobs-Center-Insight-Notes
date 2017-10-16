@@ -1,0 +1,156 @@
+head {
+  margin: 0;
+}
+
+html {
+  margin-top: 0px;
+  width: 100%;
+}
+
+body {
+  margin-top: 0;
+  width: 100%;
+  margin: 0;
+  height: 100%;
+}
+
+.container {
+  margin: 2px;
+}
+
+h1 {
+  margin-top: 0;
+  background-color: steelblue;
+  margin: auto;
+  text-align: center;
+}
+
+h2 {
+  background-color: black;
+  color: white;
+}
+
+h3{
+  background-color: lightblue;
+}
+
+h4{
+  margin-top: 0;
+  background-color: steelblue;
+  margin: auto;
+  text-align: center;
+  font-size: 2em;
+}
+.question{
+  font-weight: bold;
+  font-size: large;
+}
+
+.example{
+  font-style: italic;
+}
+
+.rowl{
+  display: flex;
+}
+.row2{
+  display: flex;
+}
+.row3{
+  display: flex;
+}
+.row4{
+  display: flex;
+}
+.row5{
+  display: flex;
+}
+.col1{
+  display: inline-flex;
+  width: 20vw  !important;
+  font-weight: bold;
+}
+
+.col2{
+  display: inline-flex;
+  width: 70vw !important;
+
+}
+
+.fullWidthField{
+  width: 100vw !important;;
+}
+
+.sp{
+  margin: 0;
+  min-width: 100vw;
+}
+
+
+
+/* .mpopup is entire pop up modal. Includes content section*/
+.mpopup {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 80vw;
+    height: 100%;
+    overflow: auto;
+
+  }
+
+.mpopup-content{
+  background-color: lightgrey;
+  border-width: thick;
+  border-color: black;
+  }
+
+.mpopup-main{
+  padding: 8px;
+  border-color: black;
+  border-width: thick;
+
+}
+.mpopup-head{
+  background-color: steelblue;
+}
+
+.modalLR{
+  display: inline-block;
+}
+
+.innerModalLR{
+  display:block;
+  text-align: left;
+  font-weight: bold;
+}
+
+.greenbutton{
+  background-color: green;
+  color: white;
+  min-width: 35vw;
+  font-size: 1.5em;
+}
+
+.redbutton{
+  background-color: red;
+  color: white;
+  min-width: 35vw;
+  font-size: 1.5em;
+
+}
+  /* close button style */
+  .close {
+      color: steelblue;
+      float: right;
+      font-size: 2em;
+      font-weight: bold;
+  }
+  .close:hover, .close:focus {
+      color: #000;
+      text-decoration: none;
+      cursor: pointer;
+  }

@@ -1,0 +1,325 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Youth Jobs Center Insight Meeting Notes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=.95">
+    <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Coda">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="yjc_insight_notes.css">
+    <script src="yjc_insight_notes.js"></script>
+    <script src="yjc_insight_notes.php"></script>
+
+</head>
+
+<body onload=displayRegistration()>
+  <h1>Youth Jobs Center Insight Meeting Notes</h1>
+  <div class=container>
+    <div id=Responsibilities class=section>
+      <h2>Responsibilities</h2>
+      <div class=questionBlock id=primaryResponsibilities>
+        <p class=question id=question1>1) What are your primary responsibilities in the elevator pitch of your role in the organization?</p>
+        <span class=example>If a new Board Member came and introduced themselves and asked what you did for the organization, how would you reply?</span>
+        <form method = "post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" class="fullWidthField">
+        <input type="text" name="primaryResponsibilityField" value= "<?php echo $primaryResponsibilityField";?>"><span class = "error"> <?php echo $primaryResponsibilityFieldErr;?></span></form>
+      </div>
+      <div class=questionBlock id=otherDuties>></span>
+        <p class=question id=question2>2) We all have the other duties as assigned.  When you are not performing the important functions you just listed, what are the things that take up most of the rest of your time?</p>
+        <span class=example>What are the non-glorious tasks?</span>
+        <form class=fullWidthField><input type="text" name="otherDutiesField"></form>
+      </div>
+    </div>
+    <div id=Goals class=section>
+      <h2>Goals</h2>
+      <div class=questionBlock id=personalAccomplishment>
+        <p class=question id=question3>3) What are you most proud of accomplishing most recently at the organization?</p>
+        <span class=example>There is no wrong answer</span>
+        <form class=fullWidthField><input type="text" name="personalAccomplishmentsField"></form>
+      </div>
+      <div class=questionBlock id=idealAccomplishments>
+        <p class=question id=question4>4)If everyone would let you “be great”, what would you love to accomplish this year?</p>
+        <span class=example></span>
+        <form class=fullWidthField><input type="text" name="beGreatField"></form>
+      </div>
+      <div class=questionBlock id=organizationAccomplishment>
+        <p class=question id=question5>5)Are there somethings in particular that you would like the organization to prioritize doing better?</p>
+        <span class=example>This could be a program, administrative, cultural - anything</span>
+        <form class=fullWidthField><input type="text" name="orgGoalField"></form>
+      </div>
+    </div>
+    <div id=Data class=section>
+      <h2>Data</h2>
+      <div class=questionBlock id=personalAccomplishment>
+        <p class=question id=question6>6) Data - What data sources do you use to know if you are on track for achieving goals?</p>
+        <span class=example>How often do you use them?</span>
+    Data
+    What kind of data are you monitoring?
+    How often are you monitoring?
+    What causes you data pain?
+      </div>
+    </div>
+    <div id=StrategicPlan class=section>
+      <h2>Strategic Plan</h2>
+      <h3>6) There are 4 key goals listed in Strategic Plan, how (if at all) do you see yourself playing a role:</h3>
+      <div id=strategicPlanQuestion1>
+        <p class=question id=question?>Goal 1: Introduces early career options and potential career paths</p>
+        <span class=longQuestion>The Youth Job Center introduces early career options and potential career paths to young people, making them aware of the range of opportunities available and the kinds of education and training required to pursue these options.</span>
+        <div id=strategicPlanTable1>
+          <div class=row1>
+            <div class=col1>Role</div>
+            <div class=col2>
+              <form class=sP><input type="text" name="SP1Role"></form>
+            </div>
+          </div>
+          <div class=row2>
+            <div class=col1>How</div>
+            <div class=col2>
+              <form class=sP><input type="text" name="SP1How"></form>
+            </div>
+          </div>
+          <div class=row3>
+            <div class=col1>Resource/ Process Support</div>
+            <div class=col2>
+              <form class=sP><input type="text" name="SP1Resource"></form>
+            </div>
+          </div>
+          <div class=row4>
+            Button
+          </div>
+        </div>
+      </div>
+      <div id=strategicPlanQuestion2>
+        <p class=question id=question?>Goal 2: Prepares young people to effectively enter the job market</p>
+        <span class=longQuestion>The Youth Job Center prepares young people to effectively enter the job market, helping them develop the skills and behaviors required to gain and retain employment and grow professionally.</span>
+        <div id=strategicPlanTable2>
+          <div class=row1>
+            <div class=col1>Role</div>
+            <div class=col2>
+              <form class=sP><input type="text" name="SP2Role"></form>
+            </div>
+          </div>
+          <div class=row2>
+            <div class=col1>How</div>
+            <div class=col2>
+              <form class=sP><input type="text" name="SP2How"></form>
+            </div>
+          </div>
+          <div class=row3>
+            <div class=col1>Resource/ Process Support</div>
+            <div class=col2>
+              <form class=sP><input type="text" name="SP2Resource"></form>
+            </div>
+          </div>
+          <div class=row4>
+            Button
+          </div>
+        </div>
+      </div>
+      <div id=strategicPlanQuestion3>
+        <p class=question id=question?>Goal 3: Facilitates relationships between youth and employers</p>
+        <span class=longQuestion>The Youth Job Center facilitates relationships between youth and employers, builds success through trust, dialogue and continuous learning, and fosters two-way conversation to provide insight and understanding of job requirements and the challenges faced by youth job seekers.</span>
+        <div id=strategicPlanTable3>
+          <div class=row1>
+            <div class=col1>Role</div>
+            <div class=col2>
+              <form class=sP><input type="text" name="SP3Role"></form>
+            </div>
+          </div>
+          <div class=row2>
+            <div class=col1>How</div>
+            <div class=col2>
+              <form class=sP><input type="text" name="SP3How"></form>
+            </div>
+          </div>
+          <div class=row3>
+            <div class=col1>Resource/ Process Support</div>
+            <div class=col2>
+              <form class=sP><input type="text" name="SP3Resource"></form>
+            </div>
+          </div>
+          <div class=row4>
+            Button
+          </div>
+        </div>
+      </div>
+      <div id=strategicPlanQuestion4>
+        <p class=question id=question?>Goal 4: Bridges the worlds of education and employment</p>
+        <span class=longQuestion> The Youth Job Center bridges the worlds of education and employment promoting collaboration around common goals and supporting mutual adaptation in approaches and expectations to respond to current economic and social realities.</span>
+        <div id=strategicPlanTable4>
+          <div class=row1>
+            <div class=col1>Role</div>
+            <div class=col2>
+              <form class=sP><input type="text" name="SP4Role"></form>
+            </div>
+          </div>
+          <div class=row2>
+            <div class=col1>How</div>
+            <div class=col2>
+              <form class=sP><input type="text" name="SP4How"></form>
+            </div>
+          </div>
+          <div class=row3>
+            <div class=col1>Resource/ Process Support</div>
+            <div class=col2>
+              <form class=sP><input type="text" name="SP4Resource"></form>
+            </div>
+          </div>
+          <div class=row4>
+            Button
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id=TeamDynamics class=section>
+      <h2>Team Dynamics</h2>
+      <div class=questionBlock id=teamMorale>
+        <p class=question id=question?>7) Team Dynamics - Hypothetical question. You suddenly get “voluntold” that you are Chair of the Team Morale Committee.</p>
+        <span class=example>What issues are you going to try to address or what changes will you try to make?</span>
+        <form class=fullWidthField><input type="text" name="moraleField"></form>
+      </div>
+      <div class=questionBlock id=administration>
+        <p class=question id=question?>8) Team Dynamics - Administration/Board. You suddenly get “voluntold” that you are the representative for the entire organization to represent them in a meeting with administration and Board to enhance morale and improve performance.</p>
+        <span class=example>  What do you advocate for?</span>
+        <form class=fullWidthField><input type="text" name="administrativeField"></form>
+      </div>
+      <div class=questionBlock id=meetings>
+        <p class=question id=question?> 9) Team Dynamics - Meetings. You suddenly get “voluntold” that you are the organization’s Meeting Police.</p>
+        <span class=example>What changes do you make to improve meetings in the organization?</span>
+        <form class=fullWidthField><input type="text" name="meetingField"></form>
+      </div>
+    </div>
+
+    <div id=Curriculum class=section>
+      <h2>Overall Curriculum</h2>
+      <p id=curriculumNotes>There were some notes by our curriculum reviewer that she wanted to share.</p>
+        <li> Substantive content which flows nicely</li>
+        <li> Curriculum clearly designed to be engaging for students</li>
+        <li> If executed correctly, should assist students in creating a clear path to college/career and ultimately economic security.</i>
+        <li> She ♥ the Intern Orientation section.</li>
+        <li> Some good opportunities were presented to internalize the goal planning process</li>
+
+      <div class=curriculumBlock id=generalCurriculum>
+        <h3>General Curriculum and Program Questions</h3>
+        <div class=questionBlock id=ongoing>
+          <p class=question id=question?>Is there a continued communication with students that have successfully completed the program? </p>
+          <span class=example>How long and how?</span>
+          <form class=fullWidthField><input type="text" name="continuedCommunicationField"></form>
+        </div>
+        <div class=questionBlock id=demographic>
+          <p class=question id=question?>What is the typical demographic of students that access the curriculum?</p>
+          <span class=example></span>
+          <form class=fullWidthField><input type="text" name="demographicField"></form>
+        </div>
+        <div class=questionBlock id=diverse>
+          <p class=question id=question?>Do diverse learners have access to the curriculum?</p>
+          <span class=example>Are they a targeted population as well? How have they done with the curriculum?</span>
+          <form class=fullWidthField><input type="text" name="diverseField"></form>
+        </div>
+        <div class=questionBlock id=session>
+          <p class=question id=question?>Approximately how long is each lesson?</p>
+          <span class=example>Is the majority of that time spent on the lesson or doing other things like behavior management or housekeeping?  Does the session length seem like the right length?</span>
+          <form class=fullWidthField><input type="text" name="sessionLengthField"></form>
+        </div>
+      </div>
+
+      <div class=curriculumBlock id=9th>
+        <h3>Year One (9th Grade)</h3>
+        <div class=questionBlock id=worksheets>
+          <p class=question id=question?>Have students ever given push back to completing the worksheets? </p>
+          <span class=example>If so, what is the alternative?</span>
+          <form class=fullWidthField><input type="text" name="pushBackField"></form>
+
+        </div>
+
+      </div>
+      <div class=curriculumBlock id=10th>
+        <h3>Year Two (10th Grade)</h3>
+        <div class=questionBlock id=continuation>
+          <p class=question id=question?>Is 10th grade content a continuation of 9th grade curriculum? </p>
+          <span class=example>The lessons begin with lesson 4 and there only 3 lessons. Is this actually considered year two? - which would make sense.</span>
+          <form class=fullWidthField><input type="text" name="ninthContinuationField"></form>
+        </div>
+        <div class=questionBlock id=newStudents>
+          <p class=question id=question?>Would any student new to the program begin with the 9th grade curriculum or would they start at their grade level? If the latter is true, then some tweaking would need to be done to ensure a sophomore doesn’t miss some of the crucial lessons from year one.
+          </p>
+          <span class=example>The session following the Introduction is Workplace Culture and Etiquette.However at the conclusion of the Introduction it is stated “At our next session, we will discuss our personal values and how they impact of professional decisions and growth.” Is this correct?
+          </span>
+          <form class=fullWidthField><input type="text" name="newStudentssField"></form>
+
+        </div>
+      </div>
+      <div class=curriculumBlock id=11th>
+        <h3>Year Three (11th Grade)</h3>
+        <div class=questionBlock id=research>
+          <p class=question id=question?>The 1st session refers to previous week’s research but there is no lesson plan for that week in file. How did students conduct research? </p>
+          <span class=example>Is this a continuation from year 2? Can 11 grade curriculum stand alone or would a year 3 student begin with the 9th grade curriculum?</span>
+          <form class=fullWidthField><input type="text" name="researchField"></form>
+        </div>
+      </div>
+      <div class=curriculumBlock id=12th>
+        <h3>Year Four (12th Grade)</h3>
+        <div class=questionBlock id=postSecondary>
+          <p class=question id=question?>Post Secondary Goals and Planning section is listed in both session 5 and session 6 with the same verbiage.  </p>
+          <span class=example>In Session 5, the Post Secondary Goals and Planning section is followed by Career Exploration. In Session 6, the Post Secondary Goals and Planning section is followed by the Career Profile section.  Is this intentional?</span>
+          <form class=fullWidthField><input type="text" name="postSecondaryField"></form>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="mpopupBox"  class="mpopup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <script>const popup = document.getElementById("mpopupBox")</script>
+    <script>popup.setAttribute("style", "none")</script>
+      <!-- mPopup content -->
+    <div class="mpopup-content">
+      <div class="mpopup-head">
+        <span class="close" onclick='popup.style.display = "none"'>×</span>
+        <h4>Youth Jobs Center Insight Meeting Notes Registration</h4>
+      </div>
+      <div class="mpopup-main">
+        <p>This form is intended to document insight meeting notes from meetings with the Youth Jobs Center.</p>
+        <p>Data will not be reported to organization management on an individual basis. Although the names of interviewes will be tracked, data is not intended to be reported on an individual basis.</p>
+        <div id=registration display="flex">
+          <form action="/yjc_insight_notes.php" >
+          <div id=registrationBox class="modalLR">
+            <div id=colmodalRegistrationBoxes class="innermodalLR">
+              Date:<br>
+               <input type="text" name="dateField" value="<?php echo htmlspecialchars($todayDate);?>"><br><br>
+              Start Time:<br>
+               <input type="text" name="timeField"><br><br>
+              First name:<br>
+             <input type="text" name="firstNameField"><br><br>
+            Last name:<br>
+             <input type="text" name="lastNameField"><br><br>
+              Title:<br>
+             <input type="text" name="titleField" ><br><br>
+              Interviewer 1:<br>
+              <input type="text" name="interviewer Field" value="Maji Tharpe"><br><br>
+              Interviewer 2:<br>
+              <input type="text" name="interviewer2 Field" value=Null><br>
+              <br>
+            </div>
+          </div>
+          <div id=modalbuttonBox class="modalLR">
+            <div id=colmodalButtons class="innerModalLR">
+              <button onclick="registerStaff()" class="greenbutton" margin = "auto" id="registerStaffButton">Start New Interview</button>
+              <script>const regStaff = document.getElementById("registerStaffButton")</script>
+              <script>regStaff.addEventListener("click", registerStaff(), false)</script>
+              <script>regStaff.addEventListener("click", hideModal, false)</script>
+              <button onclick="updateInterview()" class="redbutton" margin = "auto">Update or Finish Interview</button>
+            </div>
+          </div>
+        </form>
+        </div>
+      </div>
+      <div class="mpopup-foot" display = "block">
+
+        <script>window.onclick = function(event) {if (event.target == popup) {
+                popup.style.display = "none";}}</script>
+      </div>
+    </div>
+  </div>
+
+</body>
